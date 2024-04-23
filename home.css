@@ -1,6 +1,8 @@
-body {
+* {
     margin: 0;
+    padding: 0;
 }
+
 header {
     background: linear-gradient(to right, #74A9DB, #ffffff);
     height: 100px;
