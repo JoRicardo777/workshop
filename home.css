@@ -1,37 +1,63 @@
-.desafio1 {
-    background: linear-gradient(#5734DA, white);
-    padding: 45px;
-    width: 400px;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    margin: 0;
+}
+header {
+    background: linear-gradient(to right, #74A9DB, #ffffff);
+    height: 100px;
+    border-bottom: 12px solid;
+    border-image: linear-gradient(to right, #ffffff, #74A9DB) 1;
 }
 
-.desafio2 {
-    background: linear-gradient(white,#5734DA);
-    padding: 45px;
-    width: 400px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+h2 {
+    margin: 0;
 }
 
-.content1 {
-    font-family: Arial, Helvetica, sans-serif;
+a {
+    text-decoration: none;
+    color: #4fb13e;
 }
 
-.header-main {
-    background-color: #5734DA;
-}
+ /*----------------------HEADER-----------------*/
 
-.header1 {
-    background: linear-gradient(70deg, rgb(255, 182, 171), rgb(184, 241, 255));
-    color: rgb(59, 24, 2);
-    width: 300px;
-    height: 30px;
-    padding: 10px;
+.header-container {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.header1 {
+    padding: 5px;
+}
 
+.content1 {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+ /*-------------------------MAIN------------------*/
+
+.desafio-container {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.desafio1 {
+    background: linear-gradient(#9d85f7, #ffffff);
+    padding: 45px;
+    width: 600px;
+    position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.desafio2 {
+    background: linear-gradient(#ffffff,#9d85f7);
+    padding: 45px;
+    width: 600px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 #footer1 {
     background-color: rgb(254, 251, 200);
