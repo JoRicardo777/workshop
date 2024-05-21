@@ -2,8 +2,14 @@ body {
     margin: 0;
     max-width: 100%;
     text-align: center;    
+    background-color: green;
 
 }
+
+section {
+  background-image: radial-gradient(red, green ,yellow);
+}
+
 
 .margins {
     display: inline-block;
@@ -13,9 +19,8 @@ body {
     border: 10px solid aqua;
     border-radius: 30px;
     border-top: 200px solid aqua;
-    
+    margin-top: 70px;
     padding: 100px;
-    margin: 10px;
     display:inline-block;
     left: calc(50% - 150px);
     top: calc(20% - 15px);
@@ -31,18 +36,25 @@ span {
 
 
 .header-menu {
-    background-color: #333; /* Color de fondo del menú */
+    background-color: #333;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
   
   .header-menu ul {
-    list-style: none; /* Quita los estilos de la lista */
+    list-style: none;
     padding: 0;
     margin: 0;
   }
   
   .header-menu li {
     display: inline-block; /* Coloca los elementos en línea */
-    position: relative; /* Establece posición relativa para los elementos que contienen desplegables */
+    position: relative; 
   }
   
   .header-menu li a {
@@ -54,11 +66,44 @@ span {
   }
   
   .header-menu li:hover .dropdown-content {
-    display: block; /* Muestra los elementos desplegables al pasar el ratón sobre el elemento principal */
+    display: block;
+
   }
   
+  .contador {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: radial-gradient(white, black);
+
+    
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input[type="radio"] + label {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  input[type="radio"]:checked + label::before {
+    background-image: radial-gradient(black, white);
+  }  
+  
   .dropdown-content {
-    display: none; /* Oculta los elementos desplegables por defecto */
+    display: none;
     position: absolute;
     background-color: #333;
     min-width: 160px;
@@ -84,18 +129,26 @@ span {
   }
   
   .spacer {
-    height: 1000px; /* Altura para simular el espacio antes de que el elemento se pegue */
+    height: 100px;
   }
   
   .box-red {
     width: 100px;
     height: 100px;
-    background-color: tomato;
-    position: absolute;
+    background-color: red;
+    position: relative;
     border-radius: 40px;
-    left: calc(50% - 50px);
+    margin: 0 auto;
     top: calc(35% - 50px);
 
+}
+
+
+.box-red:hover {
+  background-color: blue;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
 }
 
 .box-blue {
@@ -106,6 +159,13 @@ span {
     border-radius: 40px;
     left: calc(50% - 50px);
     top: calc(35% - 50px);
+}
+
+.box-blue:hover {
+  background-color:red;
+  width: 120px;
+  height: 120px;
+  left: calc(50% - 60px);
 }
 
 .box-blue:before {
@@ -119,3 +179,37 @@ span {
     display:block;
     height: 100px;
 } 
+
+.caja1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 50px);
+  transition: 2s;
+  background-color: yellow;
+}
+
+.caja1:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.caja2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: calc(50% - 50px);
+  top: 150px;
+  background-color: green;
+  transition: all 2s;
+}
+
+
+.caja2:focus {
+  width: 200px;
+}
+
+.caja3 {
+  width: 100px;
+  height: 100px;
+}

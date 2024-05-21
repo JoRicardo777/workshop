@@ -1,13 +1,7 @@
 * {
     margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(to right, #74A9DB, #ffffff);
-    height: 100px;
-    border-bottom: 12px solid;
-    border-image: linear-gradient(to right, #ffffff, #74A9DB) 1;
+    padding: 0;   
+    
 }
 
 h2 {
@@ -22,51 +16,70 @@ a {
  /*----------------------HEADER-----------------*/
 
 .header-container {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    font-size: 40px;
+    font-family: "DM Sans";
+    height: 150px;
+    width: 100%;
+    background: rgb(248, 234, 248);
+    border-bottom: 12px solid;
+    border-image: linear-gradient(to right, #ffffff, #dd5656) 1;
 }
 
 .header1 {
-    padding: 5px;
-}
-
-.content1 {
-    font-family: Arial, Helvetica, sans-serif; 
+    position: absolute;
+    text-align-last: right;
+    right: 500px;
 }
 
  /*-------------------------MAIN------------------*/
 
+.buttonback {
+    position: absolute;
+    left: 450px;
+    top: 200px;
+    height: 20px;
+    width: 20px;
+}
+
 .desafio-container {
+    padding-top: 150px;
     max-width: 100%; 
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    flex-direction: column;
 }
 
 .desafio1 {
-    background: linear-gradient(#9d85f7, #ffffff);
-    padding: 45px;
+    background: rgb(255, 156, 156);
+    padding: 45px 45px 45px 45px;
     width: 600px;
     position: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Sans";
 }
 
 .desafio2 {
-    background: linear-gradient(#ffffff,#9d85f7);
+    background: rgb(255, 156, 156);
     padding: 45px;
+    margin-top: 50px;
     width: 600px;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Sans";
 }
 
 #footer1 {
     background-color: rgb(254, 251, 200);
     width: 400px;
     height: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "DM Sans";
+}
 
+.content1 {
+    position: relative;
+    text-align: center;
+    font-family: "DM Sans";
 }
 
 ul {
